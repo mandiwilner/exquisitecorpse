@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Reese Turney -- Average Programmer -- @reeseturney
 
 # THANKS
 
-    <name>
+    To ourselves and google
 
 # TECHNOLOGY COLOPHON
 
