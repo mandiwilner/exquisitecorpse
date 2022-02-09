@@ -50,6 +50,20 @@ hr {
   padding: 0;
 }
 
+p{
+  font-size: 1.5em;
+}
+/*scroll through the story*/
+
+div.scroll{
+  padding: 20px;
+  background-color: white;
+  border-color: black;
+  width: 800px;
+  height: 600px;
+  overflow: scroll;
+}
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
