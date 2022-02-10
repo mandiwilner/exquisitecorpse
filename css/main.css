@@ -51,14 +51,30 @@ hr {
 }
 
 p{
+  font-family: Ariel, sans-serif;
   font-size: 1.5em;
+}
+
+h1{
+  font-family: Futura, sans-serif;
+  text-align: center;
+}
+
+h2{
+  font-family: Futura, sans-serif;
+  text-align: center;
+  size: 1.5em;
 }
 /*scroll through the story*/
 
 div.scroll{
+  margin: auto;
+  width: 50%;
   padding: 20px;
   background-color: white;
-  border-color: black;
+  border-style: solid;
+  border-spacing: 10px;
+  border-radius: 5px;
   width: 800px;
   height: 600px;
   overflow: scroll;
