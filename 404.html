@@ -1,11 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <style>
+
+
     * {
       line-height: 1.2;
       margin: 0;
@@ -14,7 +19,6 @@
     html {
       color: #888;
       display: table;
-      font-family: sans-serif;
       height: 100%;
       text-align: center;
       width: 100%;
@@ -50,12 +54,157 @@
       }
 
     }
+
+ 
+    
+
+:root {
+  --text-color: #f00;
+  --border-color: #3da7f8;
+  --animation-time: 1s;
+  --text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 5px var(--text-color),
+    0 0 10px var(--text-color), 0 0 10px var(--text-color),
+    0 0 10px var(--text-color), 0 0 10px var(--text-color),
+    0 0 20px var(--text-color), 0 0 30px var(--text-color),
+    0 0 40px var(--text-color), 0 0 55px var(--text-color),
+    0 0 75px var(--text-color);
+  --box-shadow: inset 0 0 50px var(--border-color), 0 0 10px var(--border-color),
+    0 0 20px var(--border-color), 0 0 30px var(--border-color);
+}
+
+body {
+  margin: 0px;
+  background: #00061c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.neonsign {
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.33);
+  border-radius: 40px;
+  padding: 56px 76px;
+  transform: rotate(-6deg);
+  animation: turnOnBorder 0.24s forwards step-end,
+    flickerBorder calc(var(--animation-time) * 16) infinite step-end 1s;
+}
+
+.p{
+ padding: 80px 100px;
+ background-position: bottom;
+}
+.p2{
+  font-size: 50px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+p {
+  font-family: 'Fredoka One', cursive;
+  margin: 0px;
+  color: #fff;
+}
+
+span {
+  font-size: 70px;
+}
+
+p span {
+  opacity: 0.33;
+  animation: turnOn 1s forwards step-end;
+}
+
+p span:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+p span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+p span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+p span:nth-child(3) {
+  animation: turnOn 0.27s forwards step-end,
+    flicker var(--animation-time) infinite step-end 2.5s;
+}
+p span:nth-child(5) {
+  animation: turnOn 0.27s forwards step-end,
+    flicker var(--animation-time) infinite step-end 3s;
+}
+
+@keyframes turnOnBorder {
+  100% {
+    border: 3px solid #fff;
+    box-shadow: var(--box-shadow);
+    opacity: 1;
+  }
+}
+
+@keyframes turnOn {
+  100% {
+    text-shadow: var(--text-shadow);
+    opacity: 1;
+  }
+
+}
+
+@keyframes flicker {
+  10% {
+    text-shadow: var(--text-shadow);
+  }
+  90% {
+    text-shadow: none;
+  }
+}
+
+@keyframes flickerBorder {
+  5% {
+    box-shadow: var(--box-shadow);
+  }
+  95% {
+    box-shadow: none;
+  }
+}
+
   </style>
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <section>
+  <div class="neonsign">
+    <p> 
+      <span>P</span>
+      <span>A</span>
+      <span>G</span>
+      <span>E</span>
+    </p>
+    <p>
+      <span>N</span>
+      <span>O</span>
+      <span>T</span>
+    </p>
+  
+    <p>
+      <span>F</span>
+      <span>O</span>
+      <span>U</span>
+      <span>N</span>
+      <span>D</span>
+    </p>
+  </div>
+  </section>
+  <section>
+
+  <div class="p">
+  <p class="p2">Sorry! The page you were trying to view does not exist.</p>
+</div>
+</section>
 </body>
 
 </html>
